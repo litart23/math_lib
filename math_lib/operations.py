@@ -6,6 +6,15 @@ def add(a, b):
     :param b: Второе число.
     :return: Сумма a и b.
     test
+    import numpy as np 
+    qa = np.array([[1,2,3],[4,5,6]])
+    b = np.transpose(qa) #or qa.T
+    np.dot(b,qa) # multiplication
+    b.shape #dimetions
+    print(qa)
+    take_col = qa[:,:2] # taking first two column
+    reshape = qa.reshape(-1,1) # creating a new columns
+    reshape
     """
     return a + b
 
@@ -55,22 +64,8 @@ def numpym(a, b):
     reshape = qa.reshape(-1,1) # creating a new columns
     reshape
     """
-    return a+b
+    return a + b
 
-def vocab_m(a, b):
-    """
-    Vocabulary
-    Centroid: The mean of all points in a cluster.
-Linkage: The method used to determine the distance between clusters in hierarchical clustering.
-Orthonormal: Vectors that are both orthogonal (perpendicular) and normalized (length = 1).
-Orthogonal: Vectors that are perpendicular to each other (dot product = 0).
-Eigenvalues: Scalars that indicate the magnitude of the eigenvectors in PCA.
-Projection: Mapping data points onto a lower-dimensional space (e.g., PCA).
-Anomaly Score: A measure used in Isolation Forest to identify outliers.
-Non-Negative Matrix Factorization (NMF): A technique for factorizing a matrix into two non￾negative matrices.
-Topic Modeling: A technique for discovering abstract topics in a collection of documents (e.g., LDA).
-    """     
-    return a / b
 
 def helpm(a, b):
     """
@@ -97,7 +92,7 @@ def helpm(a, b):
     Non-Negative Matrix Factorization (NMF): A technique for factorizing a matrix into two non￾negative matrices.
     Topic Modeling: A technique for discovering abstract topics in a collection of documents (e.g., LDA).
     """     
-    return a,b
+    return a + b
 
 def ten(a, b):
     """
@@ -196,7 +191,7 @@ def ten(a, b):
     2. Initialize word distributions for each topic.
     3. Iteratively update the distributions using Gibbs sampling or variational inference.
     """
-    return a,b
+    return a + b
 
 def one(a, b):
     """
@@ -214,7 +209,7 @@ def one(a, b):
     np.dot(b,qa) # Умножение матриц
     b.shape, qa.shape #узнать размерность
     """
-    return a 
+    return a + b
 
 def two(a, b):
     """
@@ -373,14 +368,14 @@ def two(a, b):
     eigenvalues, eug = np.linalg.eig(test)
     eigenvalues, eug
     """
-    return b
+    return a + b
 
 def three(a, b):
     """
     И так, линкаджи - это методы рассчёта расстояния между кластерами
     Agglomerative: снизу вверх, объединяет кластеры. Чаще используется. Divisive: сверху вниз, разделяет кластеры. Редко применяется из-за сложности.
     """
-    return a,b
+    return a + b
 
 def four(a, b):
     """
@@ -434,7 +429,8 @@ def four(a, b):
     plt.show()
 
     """
-    return a,b
+    return a + b
+
 def five(a, b):
     """
      soft clustering, fuzzy, c-means, generalized inertia, eigenvectors, eigenvalues
@@ -476,7 +472,7 @@ def five(a, b):
     plt.show()
 
     """
-    return a,b
+    return a + b
 
 def six(a, b):
     """
@@ -534,7 +530,7 @@ def six(a, b):
     b = np.array([4,3,2,1]).reshape(-1,1)
     U2@U2.T@b
     """
-    return a,b
+    return a + b
 
 def seven(a, b):
     """
@@ -576,7 +572,7 @@ def seven(a, b):
     print(S_)  # (2000, 2), 2 независимых компонента
     """
 
-    return a,b
+    return a + b
 
 def eight(a, b):
     """
@@ -647,7 +643,8 @@ def eight(a, b):
     W = nmf.fit_transform(X)
     H = nmf.components_
     """
-    return a,b
+    return a + b
+
 def nine(a, b):
     """
     1. Text Features (Текстовые признаки)
@@ -746,5 +743,5 @@ def nine(a, b):
     2. Initialize word distributions for each topic.
     3. Iteratively update the distributions using Gibbs sampling or variational inference.
     """
-    return a,b
+    return a + b
 
